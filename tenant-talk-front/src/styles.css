@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #272727;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow: hidden;
+}
+
+#root {
+  overflow: auto;
+}
+
+body {
+  position: fixed;
+  overflow: hidden;
+  overscroll-behavior-y: none;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: #fff8de;
+  overflow: hidden;
+
+}
+
+
+
+.image-left {
+  position: fixed;
+  display: inline-block;
+  transform: translate3d(0, -50%, 0);
+  line-height: 1em;
+  top: 50px;
+  left: 60px;
+  width: 200px;
+  opacity: 0.8;
+}
+
+.posts-left {
+  border-radius: 10px;
+  position: absolute;
+  transform: translate3d(0, -50%, 0);
+  line-height: 1em;
+  top: 400px;
+  left: 60px;
+  width: 510px;
+  height: 600px;
+  overflow: auto;
+  background: rgba(153,170,255,0.6);
+}
+
+.posts-right {
+  border-radius: 10px;
+  position: absolute;
+  transform: translate3d(0, -50%, 0);
+  line-height: 1em;
+  top: 400px;
+  left: 700px;
+  width: 510px;
+  height: 600px;
+  overflow: hidden;
+  opacity: 0.8;
+  background: rgba(153,170,255,0.6);
+}
+
+
+canvas {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+}
+
+#style-1::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #FCEEB5;
+}

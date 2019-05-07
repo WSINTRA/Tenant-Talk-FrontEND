@@ -1,0 +1,79 @@
+body {
+  height: 100%;
+  margin: 0;
+  background-image: url(original.png); 
+}
+textarea {
+  width: 340px;
+  height: 200px;
+}
+
+#text {
+  width:500px;
+  height:200px;
+  overflow:scroll;
+  background-color:#FFF;
+  color:#222;
+  /*font-family:Courier, monospace;*/
+  font-weight:normal;
+  font-size:24px;
+  resize:none;
+  line-height:40px;
+  padding-left:100px;
+  padding-right:100px;
+  padding-top:45px;
+  /*padding-bottom:34px;*/
+ /* background-image:url(https://static.tumblr.com/maopbtg/E9Bmgtoht/lines.png), url(https://static.tumblr.com/maopbtg/nBUmgtogx/paper.png);*/
+  background-repeat:repeat-y, repeat;
+  -webkit-border-radius:2px;
+  border-radius:2px;
+  /*-webkit-box-shadow: 0px 2px 3px #000;*/
+  /*box-shadow: 0px 2px 14px #000;*/
+  border-top:1px solid #FFF;
+  border-bottom:1px solid #FFF;
+}
+.reply {
+	
+}
+.App {
+font-family: 'Montserrat', sans-serif;
+
+  
+}
+.header {
+  
+  text-align: center;
+  padding: 20px;
+  margin-left: 100px;
+}
+.headTitle {
+
+	font-size: 60px;
+	color: #152847;
+}
+.container {
+  border-radius: 100px;
+  padding: 6px;
+  margin-left: 200px;
+}
+.speechImg {
+  width: 40px;
+}
+
+.fixed {
+  position: fixed;
+  z-index: 1000;
+}
+
+.selectBy {
+    float:middle;
+    position:fixed;
+    left:10%;  
+    width: 100%;
+    
+    z-index: 1000;
+    margin-left: 1px;
+   background-color: #e4e4e4 ;    /* left column content width (column width minus left and right padding) */
+        /* right column width plus left column left padding */
+    
+}
