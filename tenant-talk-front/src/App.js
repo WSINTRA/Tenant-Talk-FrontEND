@@ -63,9 +63,9 @@ filter: "All"
 
 componentDidMount() { //Fetch all the data the app will use
   
-  let users = "http://localhost:3050/users"
-  let posts = "http://localhost:3050/posts"
-  let replies = "http://localhost:3050/post_replies"
+  let users = "https://still-gorge-34738.herokuapp.com/users"
+  let posts = "https://still-gorge-34738.herokuapp.com/posts"
+  let replies = "https://still-gorge-34738.herokuapp.com/post_replies"
     Promise.all([fetch(users), fetch(posts), fetch(replies)])
 
       .then(([res1, res2, res3]) => { 
@@ -89,7 +89,7 @@ newReply (event, newReply, props){ //function to deal with a Post reply
   let message = newReply.message
   let updatedPosts = this.state.allReplies.slice()
 
-  fetch("http://localhost:3050/replies", {
+  fetch("https://still-gorge-34738.herokuapp.com/replies", {
   method: "POST",
   headers: {
     'Content-Type': 'application/json',
@@ -100,7 +100,7 @@ newReply (event, newReply, props){ //function to deal with a Post reply
 .then(res => res.json())
 .then(data => {
 
-fetch("http://localhost:3050/post_replies", { //add the new reply to a Post by ID
+fetch("https://still-gorge-34738.herokuapp.com/post_replies", { //add the new reply to a Post by ID
   method: "POST",
   headers: {
     'Content-Type': 'application/json',
@@ -136,7 +136,7 @@ handleEdit (event, edit, props) {  //When NewMessageForm is type edit, this func
   let category = edit.category
   let messageId = props.messageToEdit.id
  
-  fetch(`http://localhost:3050/posts/${messageId}`, {
+  fetch(`https://still-gorge-34738.herokuapp.com/posts/${messageId}`, {
   method: "PATCH",
   headers: {
     'Content-Type': 'application/json',
@@ -165,7 +165,7 @@ let message = newPost.message
 let category = newPost.category
 //need a user_id a message and a category for the post
 //Submit this new message to the database
-fetch("http://localhost:3050/posts", {
+fetch("https://still-gorge-34738.herokuapp.com/posts", {
   method: "POST",
   headers: {
     'Content-Type': 'application/json',
