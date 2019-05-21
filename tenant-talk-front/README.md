@@ -1,5 +1,8 @@
 Flatiroc Code School FullStack Development, Module 4 React Project.
 
+Slow working version.. Please allow a couple of minutes for Heroku to fire up the backend before testing.
+https://frozen-springs-39090.herokuapp.com/
+
 Tenant Talk,
 An example project built to demonstrate an understanding of React, states and props.
 
