@@ -1,4 +1,4 @@
-Flatiroc Code School FullStack Development, Module 4 React Project.
+Flatiron Code School FullStack Development, Module 4 React Project.
 
 Slow working version.. Please allow a couple of minutes for Heroku to fire up the backend before testing.
 https://frozen-springs-39090.herokuapp.com/
