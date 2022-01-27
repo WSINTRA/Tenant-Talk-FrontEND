@@ -8,7 +8,7 @@
     "react-scripts": "^3.0.0",
     "react-spring": "^8.0.20",
     "react-three-fiber": "^2.1.0",
-    "three": "^0.104.0"
+    "three": "^0.137.0"
   },
   "scripts": {
     "start": "react-scripts start",
